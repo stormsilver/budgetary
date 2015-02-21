@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @paycheck.name %>
+</p>
+
+<p>
+  <strong>Planned amount:</strong>
+  <%= @paycheck.planned_amount %>
+</p>
+
+<%= link_to 'Edit', edit_paycheck_path(@paycheck) %> |
+<%= link_to 'Back', paychecks_path %>

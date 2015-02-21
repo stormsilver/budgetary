@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bucket.name %>
+</p>
+
+<p>
+  <strong>Starting amount:</strong>
+  <%= @bucket.starting_amount %>
+</p>
+
+<p>
+  <strong>Budget amount:</strong>
+  <%= @bucket.budget_amount %>
+</p>
+
+<%= link_to 'Edit', edit_bucket_path(@bucket) %> |
+<%= link_to 'Back', buckets_path %>
